@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+		"lint": "npx prettier -w ./src/"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "thin-backend-vue": "^0.10.1",
+    "vue": "^3.2.45",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "prettier": "^3.0.1",
     "vite": "^4.1.0"
   }
 }
