@@ -19,6 +19,15 @@ const routes = [
 		},
 		component: () => import('../pages/HomePage.vue'),
 	},
+	// 404
+	{
+		path: '/:catchAll(.*)',
+		name: 'not-found',
+		meta: {
+			layout: 'home',
+		},
+		component: () => import('../pages/NotFound.vue'),
+	},
 ]
 
 const router = createRouter({
