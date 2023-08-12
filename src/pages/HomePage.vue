@@ -11,5 +11,12 @@
 </template>
 
 <script setup>
-import { posts } from 'api'
+import { ref } from 'vue';
+import { getPosts } from 'api';
+
+const posts = ref([]);
+
+getPosts().then(fetchedPosts => {
+	posts.value = fetchedPosts;
+});
 </script>
