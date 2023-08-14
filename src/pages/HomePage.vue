@@ -8,13 +8,22 @@
 			</article>
 		</li>
 	</ul>
+
+	<button @click="logOutUser">Logout</button>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { getPosts } from 'api';
+import { useRouter } from 'vue-router';
+import { getPosts, logOut } from 'api';
 
+const router = useRouter();
 const posts = ref([]);
+
+const logOutUser = () => {
+	logOut();
+	router.push({name: 'index'});
+}
 
 getPosts().then(fetchedPosts => {
 	posts.value = fetchedPosts;

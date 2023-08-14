@@ -1,4 +1,4 @@
-import home from './home.vue'
-import intro from './intro.vue'
+import HomeLayout from './HomeLayout.vue'
+import OnboardingLayout from './OnboardingLayout.vue'
 
-export { home, intro }
+export { HomeLayout, OnboardingLayout }

@@ -1,21 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-	// Intro Page
+	// Index Page
 	{
 		path: '/',
-		name: 'intro',
+		name: 'index',
 		meta: {
-			layout: 'intro',
+			layout: 'HomeLayout',
 		},
-		component: () => import('../pages/IntroPage.vue'),
+		component: () => import('../pages/IndexPage.vue'),
+	},
+	// Index Page
+	{
+		path: '/start',
+		name: 'start',
+		meta: {
+			layout: 'HomeLayout',
+		},
+		component: () => import('../pages/StartPage.vue'),
+	},
+	// Onboarding Page
+	{
+		path: '/welcome',
+		name: 'onboarding',
+		meta: {
+			layout: 'OnboardingLayout',
+		},
+		component: () => import('../pages/OnboardingPage.vue'),
 	},
 	// Home
 	{
 		path: '/home',
 		name: 'home',
 		meta: {
-			layout: 'home',
+			layout: 'HomeLayout',
 		},
 		component: () => import('../pages/HomePage.vue'),
 	},
@@ -24,7 +42,7 @@ const routes = [
 		path: '/:catchAll(.*)',
 		name: 'not-found',
 		meta: {
-			layout: 'home',
+			layout: 'HomeLayout',
 		},
 		component: () => import('../pages/NotFound.vue'),
 	},

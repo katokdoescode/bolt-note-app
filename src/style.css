@@ -1,11 +1,15 @@
+@import './assets/css/transitions.css';
+
 :root {
 	--neutral-black: #180e25;
 	--black: #000000;
 	--white: #ffffff;
+	--light-primary: #404040;
 
 	--accent-color-primary: #f9b803;
 	--accent-color-second: #c8a0fb;
 	--accent-color-last: #afd0ff;
+	--brand-color: #263059;
 
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -23,10 +27,13 @@
 }
 
 #app {
-	max-width: 375px;
 	margin: 0 auto;
-	padding: 2rem;
 	text-align: center;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -39,6 +46,7 @@
 	}
 	button {
 		background-color: var(--white);
+		color: var(--black);
 	}
 }
 
@@ -52,5 +60,6 @@
 	}
 	button {
 		background-color: var(--white);
+		color: var(--black);
 	}
 }

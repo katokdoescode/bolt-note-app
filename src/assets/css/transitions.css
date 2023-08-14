@@ -1,0 +1,15 @@
+/* SLIDE FADE IN\OUT TRANSITION */
+.slide-fade-enter-active {
+	transition: transform 0.2s ease-in;
+}
+
+.slide-fade-leave-active {
+	transition: transform 0.2s ease-out;
+}
+
+.slide-fade-enter-from {
+	transform: translateX(100vw);
+}
+.slide-fade-leave-to {
+	transform: translateX(-100vw);
+}

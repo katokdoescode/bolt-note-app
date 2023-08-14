@@ -1,19 +1,21 @@
 {
-  "name": "vite",
-  "version": "0.0.0",
+  "name": "bolt-note-app",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-		"lint": "npx prettier -w ./src/"
+    "lint": "npx prettier -w ./src/"
   },
   "dependencies": {
     "thin-backend-vue": "^0.10.1",
     "vue": "^3.2.45",
-    "vue-router": "^4.2.4"
+    "vue-router": "^4.2.4",
+    "vue3-cookies": "^1.0.6"
   },
   "devDependencies": {
+    "@types/thin-backend": "https://thin.dev/types/b9d395ca-0085-4bd3-b56b-ea39dabed915/sUIgKaSmCbkQDRAjRLJTZXuTrPpgNqMB",
     "@vitejs/plugin-vue": "^4.0.0",
     "prettier": "^3.0.1",
     "vite": "^4.1.0"

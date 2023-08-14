@@ -5,13 +5,13 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { home, intro } from 'layouts'
+import { HomeLayout, OnboardingLayout } from 'layouts'
 
 const route = useRoute()
 
 const layouts = {
-	intro,
-	home,
+	HomeLayout,
+	OnboardingLayout,
 }
 
 const layout = computed(() => route.meta.layout)
